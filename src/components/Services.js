@@ -10,7 +10,7 @@ const Services = () => {
       <div className="section-center services-center">
         {services.map((link) => {
           return (
-            <article className="service">
+            <article key={link.id} className="service">
               <span className="service-icon">
                 <i className={link.icon}></i>
               </span>

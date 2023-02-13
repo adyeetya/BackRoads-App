@@ -17,7 +17,7 @@ const Navbar = () => {
           
             {pageLinks.map((link) => {
               return (
-                <li>
+                <li key={link.id}>
                   <a href={link.href} className="nav-link">
                     {' '}
                     {link.text}{' '}
@@ -31,7 +31,7 @@ const Navbar = () => {
         <ul className="nav-icons">
         {socialLinks.map((link)=>{
           return (
-            <li>
+            <li key={link.id}>
               <a
                 href={link.href}
                 target="_blank"
